@@ -7,7 +7,8 @@ on:
 jobs:
     test_runner:
         runs-on: self-hosted
+        env:
         steps:
         - name: get-env
           run: env
-          working-directory: /jkibari3/test
+          working-directory: /jkibari2/test
