@@ -10,4 +10,4 @@ jobs:
         steps:
         - name: get-env
           run: env
-          working-directory: /home/jkibari3/test
+          working-directory: test
