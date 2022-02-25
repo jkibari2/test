@@ -2,12 +2,11 @@ name: test
 on: 
   push:
    branches:
-     - main
+     - master
 
 jobs:
     test_runner:
-        runs-on: self-hosted
+        runs-on: [self-hosted,deb-git]
         steps:
-        - uses: actions/checkout@v2
         - name: get-env
           run: env
