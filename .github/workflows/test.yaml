@@ -10,7 +10,5 @@ jobs:
         steps:
         - name: get-env
           run: env
-     defaults:
-      run:
-       shell: bash
-       working-directory: /home/jkibari3/test
+          shell: bash
+          working-directory: jkibari3/test
