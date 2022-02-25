@@ -1,14 +1,11 @@
 name: test
-on:
-    push:
-        branches:
-            - master
+on: [push]
 
 jobs:
     test_runner:
         runs-on: [self-hosted]
         steps:
-            - name: get-env
-              run: env
-              working-directory: /home/jkibari3/test 
+        - name: get-env
+          run: env
+          working-directory: /home/jkibari3/test 
 	
