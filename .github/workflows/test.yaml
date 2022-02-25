@@ -11,4 +11,4 @@ jobs:
         - uses: actions/checkout@v2
         - name: get-env
           run: env
-          working-directory: /jkibari2/test
+          working-directory: ./jkibari2/test
