@@ -6,7 +6,7 @@ on:
 
 jobs:
     test_runner:
-        runs-on: [self-hosted,deb-git]
+        runs-on: [self-hosted]
         steps:
         - name: get-env
           run: env
