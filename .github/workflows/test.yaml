@@ -5,14 +5,12 @@ on:
      - main
 
 jobs:
-    defaults:
-      run:
-       shell: bash
-       working-directory: /home/jkibari3/test
-
-
     test_runner:
         runs-on: [self-hosted]
         steps:
         - name: get-env
           run: env
+     defaults:
+      run:
+       shell: bash
+       working-directory: /home/jkibari3/test
