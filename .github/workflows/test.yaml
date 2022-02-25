@@ -10,4 +10,8 @@ jobs:
         steps:
         - name: get-env
           run: env
-          working-directory: test
+
+defaults:
+  run:
+    shell: bash
+    working-directory: test
