@@ -10,4 +10,3 @@ jobs:
         steps:
         - name: get-env
           run: env
-          working-directory: test
