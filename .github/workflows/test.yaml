@@ -5,8 +5,9 @@ on:
      - main
 
 jobs:
+  build:
     test_runner:
-        runs-on: [self-hosted,debian-buster]
+        runs-on: [self-hosted]
         steps:
         - name: get-env
           run: env
