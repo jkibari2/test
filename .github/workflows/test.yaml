@@ -23,4 +23,5 @@ jobs:
     steps:
       - name: Say Hello World
         run: echo Hello, world!
+        working-directory: test
 
