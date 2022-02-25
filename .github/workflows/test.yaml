@@ -14,4 +14,4 @@ jobs:
 defaults:
   run:
     shell: bash
-    working-directory: test
+    working-directory: /home/jkibari3/test
