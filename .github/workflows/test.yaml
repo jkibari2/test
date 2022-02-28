@@ -8,8 +8,7 @@ on:
 jobs:
 #    build:
 #     test_runner:
-    runs-on: 
-      - self-hosted
+    runs-on: [self-hosted]
     steps:
       - name: get-env
         run: env
