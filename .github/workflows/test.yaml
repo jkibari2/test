@@ -3,14 +3,14 @@ on:
  push:
    branches:
      - 'test'
-     - main
+     - master
 jobs:
   build:
 
     runs-on: [self-hosted]
 #     test_runner:
     steps:
-            #      - uses: actions/checkout@v2
+      - uses: actions/checkout@v2
       - name: get-env
         run: env
         working-directory: /home/jkibari3/test
