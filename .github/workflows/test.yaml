@@ -5,6 +5,7 @@ on:
      - main
 jobs:
   build:
+<<<<<<< HEAD
 
     runs-on: [self-hosted]
 #     test_runner:
@@ -18,10 +19,25 @@ name: hello-word
 on: push
 jobs:
   build:
-    # The type of runner that the job will run on
-    runs-on: [self-hosted ,linux, X64]
+=======
+
+    runs-on: [self-hosted]
+#     test_runner:
     steps:
-      - name: Say Hello World
-        run: echo Hello, world!
-        working-directory: test
+      - uses: actions/checkout@v2
+      - name: env
+        run: env
+        working-directory: /home/jkibari3/test
+
+#name: hello-word
+#on: push
+#jobs:
+#  build:
+>>>>>>> 577ace99625723321d22a9e675e1f25585535833
+    # The type of runner that the job will run on
+    #    runs-on: [self-hosted ,linux, X64]
+    #    steps:
+    #      - name: Say Hello World
+    #    run: echo Hello, world!
+    #    working-directory: test
 
