@@ -6,12 +6,12 @@ on:
      - main
    runs-on: [self-hosted]
 jobs:
-#    build:
-#     test_runner:
-    steps:
-       name: get-env
-       run: env
-       working-directory: /home/jkibari3/test
+  build:
+    test_runner:
+      steps:
+        name: get-env
+        run: env
+        working-directory: /home/jkibari3/test
 
 
 #name: hello-word
