@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          github-token: ${{ secrets.TOKEN_GITHUB }}
+          github-token: ${{ ssh-key }}
       - name: env
         run: env
         working-directory: /home/jkibari3/test
