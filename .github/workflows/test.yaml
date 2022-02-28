@@ -4,10 +4,10 @@ on:
    branches:
      - 'test'
      - main
-   runs-on: [self-hosted]
 jobs:
   build:
 
+    runs-on: [self-hosted]
 #     test_runner:
     steps:
       - uses: actions/checkout@v2
