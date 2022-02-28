@@ -2,8 +2,7 @@ name: test runner
 on: 
  push:
    branches:
-     - 'test'
-     - master
+     - main
 jobs:
   build:
 
@@ -12,9 +11,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: env
-        run: env
+      - run: env
         working-directory: /home/jkibari3/test
-
+      - run: ./build.sh
 
 #name: hello-word
 #on: push
