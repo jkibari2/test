@@ -13,7 +13,6 @@ jobs:
       - name: env
         run: env
         working-directory: /home/jkibari3/test
-        run: ./build.sh
 
 #name: hello-word
 #on: push
