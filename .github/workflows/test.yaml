@@ -1,27 +1,32 @@
-#name: test
-#on: 
-#  push:
-#   branches:
-#     - main
+name: test runner
+ on: 
+  push:
+    branches:
+      - 'test'
+      - main
 
-#jobs:
-#  build:
-#    test_runner:
-#        runs-on: [self-hosted]
-#        steps:
+jobs:
+#    build:
+#     test_runner:
+        runs-on: [self-hosted]
+        defaults:
+          run:
+            shell: bash
+
+            working-directory: /home/jkibari3/test
+#         steps:
 #        - name: get-env
 #          run: env
-#          shell: bash
 #          working-directory: /home/jkibari3/test
 
-name: hello-word
-on: push
-jobs:
-  build:
+#name: hello-word
+#on: push
+#jobs:
+#  build:
     # The type of runner that the job will run on
-    runs-on: [self-hosted ,linux, X64]
-    steps:
-      - name: Say Hello World
-        run: echo Hello, world!
-        working-directory: test
+    #    runs-on: [self-hosted ,linux, X64]
+    #    steps:
+    #      - name: Say Hello World
+    #    run: echo Hello, world!
+    #    working-directory: test
 
