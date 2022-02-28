@@ -8,16 +8,12 @@ on:
 jobs:
 #    build:
 #     test_runner:
-  defaults:
-    run:
-      shell: bash
-      working-directory: /home/jkibari3/test
     runs-on: 
       - self-hosted
-
     steps:
       - name: get-env
         run: env
+        working-directory: /home/jkibari3/test
 
 
 #name: hello-word
