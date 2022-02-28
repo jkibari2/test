@@ -9,6 +9,7 @@ jobs:
   build:
     test_runner:
       steps:
+        uses: actions/checkout@v2
         name: get-env
         run: env
         working-directory: /home/jkibari3/test
