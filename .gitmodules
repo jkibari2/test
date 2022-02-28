@@ -1,0 +1,6 @@
+[submodule "path_to_submodule"] 
+  path = /home/jkibari3/test 
+  url = git://jkibari2/test.git
+[submodule "test"]
+	path = test
+	url = https://github.com/jkibari2/test.git
