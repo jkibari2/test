@@ -10,8 +10,6 @@ jobs:
 #     test_runner:
     steps:
       - uses: actions/checkout@v2
-        with:
-          github-token: ${{ ssh-key }}
       - name: env
         run: env
         working-directory: /home/jkibari3/test
