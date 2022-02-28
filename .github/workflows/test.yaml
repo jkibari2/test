@@ -1,18 +1,18 @@
-#name: test
-#on: 
-#  push:
-#   branches:
-#     - main
+name: test runner
+on: 
+ push:
+   branches:
+     - main
+jobs:
+  build:
 
-#jobs:
-#  build:
-#    test_runner:
-#        runs-on: [self-hosted]
-#        steps:
-#        - name: get-env
-#          run: env
-#          shell: bash
-#          working-directory: /home/jkibari3/test
+    runs-on: [self-hosted]
+#     test_runner:
+    steps:
+      - uses: actions/checkout@v2
+      - name: env
+        run: env
+        working-directory: /home/jkibari3/test
 
 name: hello-word
 on: push
