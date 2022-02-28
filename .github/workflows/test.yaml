@@ -8,10 +8,10 @@ on:
 jobs:
 #    build:
 #     test_runner:
-    runs-on: [self-hosted]
     steps:
       - name: get-env
         run: env
+        working-directory: /home/jkibari3/test
 
 
 #name: hello-word
